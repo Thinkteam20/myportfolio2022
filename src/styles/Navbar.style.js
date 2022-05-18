@@ -20,6 +20,7 @@ export const Nav = styled.div`
     width: 100%;
     height: 48px;
     justify-contents: center;
+    box-shadow: 0 2px 3px -1px rgba(255, 255, 255, 0.3);
 `;
 export const Boxs = styled.div`
     width: 100%;
