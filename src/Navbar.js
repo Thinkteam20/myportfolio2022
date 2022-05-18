@@ -1,29 +1,36 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+// import { Link, NavLink } from "react-router-dom";
+import {
+    NavbarContainer,
+    Nav,
+    Boxs,
+    StyledLink,
+    Links,
+} from "./styles/Navbar.style.js";
 
 const Navbar = () => {
     return (
-        <div>
-            <nav>
-                <ul>
-                    <li>
-                        <NavLink to='/'>Home</NavLink>
-                    </li>
-                    <li>
-                        <Link to='Skill'>Skills</Link>
-                    </li>
-                    <li>
-                        <Link to='Timeline'>Skills</Link>
-                    </li>
-                    <li>
-                        <Link to='Projects'>Projects</Link>
-                    </li>
-                    <li>
-                        <Link to='Footer'>Footer</Link>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <>
+            <NavbarContainer>
+                <Nav>
+                    <Boxs>
+                        <StyledLink to='/'>Home</StyledLink>
+                    </Boxs>
+                    <Boxs>
+                        <Links to='Skill'>Skills</Links>
+                    </Boxs>
+                    <Boxs>
+                        <Links to='Timeline'>Timeline</Links>
+                    </Boxs>
+                    <Boxs>
+                        <Links to='Projects'>Projects</Links>
+                    </Boxs>
+                    <Boxs>
+                        <Links to='Footer'>Footer</Links>
+                    </Boxs>
+                </Nav>
+            </NavbarContainer>
+        </>
     );
 };
 
