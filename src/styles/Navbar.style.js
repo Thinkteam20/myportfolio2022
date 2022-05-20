@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { NavLink, Link } from "react-router-dom";
 
-export const NavbarContainer = styled.nav`
+export const NavbarContainer = styled.div`
     width: 100%;
     height: 48px;
     background-color: black;
@@ -15,17 +15,17 @@ export const NavbarContainer = styled.nav`
     }
 `;
 
-export const Nav = styled.div`
+export const Nav = styled.nav`
     display: flex;
     width: 100%;
     height: 48px;
     justify-contents: center;
-    box-shadow: 0 2px 3px -1px rgba(255, 255, 255, 0.3);
 `;
 export const Boxs = styled.div`
     width: 100%;
     text-align: center;
     line-height: 48px;
+    border-bottom: solid 0.1em gold;
 `;
 
 export const Li = styled.li`
@@ -33,20 +33,12 @@ export const Li = styled.li`
     list-style-type: none;
 `;
 
-export const StyledLink = styled(NavLink)`
-    @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap");
-    color: white;
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: "Urbanist", sans-serif;
-`;
-export const Links = styled(Link)`
+export const Links = styled.li`
     @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap");
     //some CSS styles here
     color: white;
     list-style-type: none;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     font-family: "Urbanist", sans-serif;
 `;

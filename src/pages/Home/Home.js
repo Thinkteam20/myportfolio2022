@@ -1,16 +1,38 @@
 import React from "react";
-import { Skill, Timeline, Footer, Projects } from "../index.js";
-import Hero from "../../components/Hero.js";
+import {
+    MainContainer,
+    ParticleContainer,
+    MainPageContents,
+} from "./Home.styles.js";
+// import { Skill, Timeline, Footer, Projects } from "../index.js";
+import Typewriter from "typewriter-effect";
 
 function Home() {
     return (
-        <div>
-            <Hero />
-            <Skill />
-            <Timeline />
-            <Projects />
-            <Footer />
-        </div>
+        <MainContainer>
+            <MainPageContents>
+                <h1>
+                    <Typewriter
+                        onInit={(typewriter) => {
+                            typewriter
+                                .pauseFor(100)
+                                .typeString("Hi,")
+                                .pauseFor(300)
+                                .deleteChars(10)
+                                .typeString(
+                                    "I am<strong> Sangpil Jung</strong> "
+                                )
+                                .deleteChars(13)
+                                .typeString(
+                                    '<strong><span style="color: #27ae60;">Front-end Developer</span> in Australia.</strong>'
+                                )
+                                .pauseFor(100)
+                                .start();
+                        }}
+                    />
+                </h1>
+            </MainPageContents>
+        </MainContainer>
     );
 }
 
