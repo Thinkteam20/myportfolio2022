@@ -6,11 +6,14 @@ import {
 } from "./Home.styles.js";
 // import { Skill, Timeline, Footer, Projects } from "../index.js";
 import Typewriter from "typewriter-effect";
+import Background from "../../components/Background.js";
+import Navbar from "../../Navbar.js";
 
 function Home() {
     return (
         <MainContainer>
             <MainPageContents>
+                <Background />
                 <h1>
                     <Typewriter
                         onInit={(typewriter) => {

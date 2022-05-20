@@ -3,8 +3,8 @@ import { NavLink, Link } from "react-router-dom";
 
 export const NavbarContainer = styled.div`
     width: 100%;
-    height: 48px;
-    background-color: black;
+    min-height: 48px;
+    color: black;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -25,20 +25,20 @@ export const Boxs = styled.div`
     width: 100%;
     text-align: center;
     line-height: 48px;
-    border-bottom: solid 0.1em gold;
+    border-bottom: solid 0.1em #21abcd;
 `;
 
 export const Li = styled.li`
-    color: white;
+    color: #21abcd;
     list-style-type: none;
 `;
 
 export const Links = styled.li`
-    @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
     //some CSS styles here
-    color: white;
+    color: #21abcd;
     list-style-type: none;
     text-decoration: none;
-    font-size: 12px;
-    font-family: "Urbanist", sans-serif;
+    font-size: 14px;
+    font-family: "Roboto Slab", serif;
 `;
