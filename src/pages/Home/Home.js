@@ -8,7 +8,7 @@ import { IoMdArrowRoundDown } from "react-icons/io";
 
 function Home() {
     return (
-        <div id='hero'>
+        <div id='hero home'>
             <div className='container'>
                 <div className='type-cover'>
                     <h1>
