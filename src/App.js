@@ -6,8 +6,8 @@ import { Home, Skill, Timeline, Footer, Projects } from "./pages/index.js";
 const App = () => {
     return (
         <div>
-            <Navbar />
             <Home />
+            <Skill />
         </div>
     );
 };

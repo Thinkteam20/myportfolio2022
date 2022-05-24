@@ -27,3 +27,7 @@ export const GoNext = styled.div`
     margin-right: auto;
     bottom: 100px;
 `;
+
+export const Hero = styled.div`
+    height: 450px;
+`;
