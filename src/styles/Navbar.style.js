@@ -3,7 +3,9 @@ import { NavLink, Link } from "react-router-dom";
 
 export const NavbarContainer = styled.div`
     width: 100%;
-    min-height: 48px;
+    height: 48px;
+    position: relative;
+    background: #fff;
     color: black;
     flex-direction: column;
     display: flex;

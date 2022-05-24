@@ -6,7 +6,7 @@ export const Container = styled.section`
     text-align: center;
     margin: auto;
     width: 100%;
-    height: 600px;
+    height: 100vh;
     position: relative;
     background-color: #fff;
 `;

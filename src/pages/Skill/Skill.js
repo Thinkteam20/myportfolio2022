@@ -3,9 +3,11 @@ import { Container } from "./Skill.style";
 
 const Skill = () => {
     return (
-        <Container>
-            <h1>Skills section</h1>
-        </Container>
+        <div id='skills'>
+            <Container>
+                <h1>Skills section</h1>
+            </Container>
+        </div>
     );
 };
 

@@ -12,7 +12,7 @@ import {
 
 const Navbar = () => {
     const [navItems, setNavItems] = useState([
-        { id: "h", value: "home", letter: " < home /> " },
+        { id: "h", value: "/", letter: " < home /> " },
         { id: "s", value: "skills", letter: " < skills /> " },
         { id: "t", value: "timeline", letter: " < timeline /> " },
         { id: "p", value: "projects", letter: " < projects /> " },
@@ -27,7 +27,13 @@ const Navbar = () => {
                         return (
                             <Boxs key={item.id}>
                                 <Links>
-                                    <Link to={item.value}>{item.letter}</Link>
+                                    <Link
+                                        to={item.value}
+                                        smooth={true}
+                                        duration={1000}
+                                    >
+                                        {item.letter}
+                                    </Link>
                                 </Links>
                             </Boxs>
                         );
