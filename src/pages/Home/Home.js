@@ -2,8 +2,6 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import Background from "../../components/Background.js";
 import "./Home.css";
-import Navbar from "../../Navbar.js";
-import TypeCover from "typewriter-effect";
 import { IoMdArrowRoundDown } from "react-icons/io";
 
 function Home() {
