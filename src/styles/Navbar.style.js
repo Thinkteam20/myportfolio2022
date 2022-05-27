@@ -33,14 +33,16 @@ export const Boxs = styled.div`
 export const Li = styled.li`
     color: #21abcd;
     list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
 `;
 
 export const Links = styled.li`
-    @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
     //some CSS styles here
     color: #21abcd;
     list-style-type: none;
     text-decoration: none;
     font-size: 14px;
-    font-family: "Roboto Slab", serif;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
 `;

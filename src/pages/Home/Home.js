@@ -11,7 +11,8 @@ function Home() {
         <div id='hero home'>
             <div className='container'>
                 <div className='type-cover'>
-                    <h1>
+                    <h1>Sangpil Jung</h1>
+                    <h2>
                         <Typewriter
                             onInit={(typewriter) => {
                                 typewriter
@@ -20,9 +21,9 @@ function Home() {
                                     .pauseFor(300)
                                     .deleteChars(10)
                                     .typeString(
-                                        "I am<strong> Sangpil Jung</strong> "
+                                        "I am<strong> Full-Stack engineer.</strong> "
                                     )
-                                    .deleteChars(13)
+                                    .deleteChars(21)
                                     .typeString(
                                         '<strong><span style="color: #27ae60;">Front-end Developer</span> in Australia.</strong>'
                                     )
@@ -30,7 +31,10 @@ function Home() {
                                     .start();
                             }}
                         />
-                    </h1>
+                    </h2>
+                </div>
+                <div className='arrow'>
+                    <IoMdArrowRoundDown size={30} />
                 </div>
             </div>
             <Background />
