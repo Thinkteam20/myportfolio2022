@@ -1,7 +1,13 @@
 import React from "react";
+import { Container } from "./Timeline.style";
 
 const Timeline = () => {
-    return <div>Timeline</div>;
+    return (
+        <div id='timeline'>
+            <Container>
+                <h1>Timeline</h1>
+            </Container>
+        </div>
+    );
 };
-
 export default Timeline;

@@ -6,6 +6,7 @@ export const NavbarContainer = styled.div`
     height: 48px;
     position: fixed;
     top: 0;
+    z-index: 99;
     background: #fff;
     color: black;
     flex-direction: column;
@@ -23,6 +24,9 @@ export const Nav = styled.nav`
     width: 100%;
     height: 48px;
     justify-contents: center;
+    @media (max-width: 700px) {
+        display: none;
+    }
 `;
 export const Boxs = styled.div`
     width: 100%;
@@ -46,4 +50,40 @@ export const Links = styled.li`
     font-size: 14px;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
+`;
+
+export const NavbarExtendedContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 700px) {
+    }
+`;
+export const OpenLinksButton = styled.button`
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 99;
+
+    @media (min-width: 700px) {
+        display: none;
+    }
+`;
+export const NavbarLinkExtended = styled(Link)`
+    @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@300&display=swap");
+    font-family: "Bebas Neue";
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 14pt;
+    border-bottom: 2px solid black;
 `;

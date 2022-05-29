@@ -16,13 +16,21 @@ const JsKeyframs = keyframes`
 `;
 
 export const Container = styled.section`
-    padding: 60px;
+    padding-top: 120px;
+    padding-right: 60px;
+    padding-left: 60px;
     margin: auto;
     width: 100%;
     height: 100vh;
     position: relative;
+    z-index: 1;
     display: flex;
-    background-color: #fff;
+    background: #fff;
+    @media (max-width: 768px) {
+        height: 100vh;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
 `;
 
 export const SkillLeftContainer = styled.div`
@@ -57,6 +65,10 @@ export const Description = styled.p`
     font-size: 15px;
     margin-top: 60px;
     margin-bottom: 10px;
+    @media (max-width: 768px) {
+        display: none;
+        margin: auto;
+    }
 `;
 
 export const SkillImg = styled.img`
@@ -65,14 +77,20 @@ export const SkillImg = styled.img`
     height: 380px;
     border: 1px solid white;
     border-radius: 5px;
+    @media (max-width: 768px) {
+        display: none;
+        margin: auto;
+    }
 `;
 
 export const SkillRight = styled.div`
-    width: 45%;
-    min-width: 590px;
+    width: 590px;
     margin-top: 60px;
     margin-left: 40px;
-    position: transparents;
+    @media (max-width: 768px) {
+        width: auto;
+        margin: auto;
+    }
 `;
 
 export const SkillWarpper = styled.div`
@@ -94,11 +112,16 @@ export const Skills = styled.div`
 `;
 
 export const SkillBoxTitle = styled.h2`
+    border: 2px solid #0288d1;
+    display: inline-block;
+    background-color: #e1f5fe;
+    border-radius: 3px;
     margin-bottom: 50px;
     letter-spacing: 2px;
     text-align: center;
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: bold;
+    padding: 3px;
 `;
 export const Details = styled.div`
     width: 100%;
@@ -129,3 +152,10 @@ export const BarDiv = styled.div`
                 : JsKeyframs}
         2s forwards;
 `;
+
+export const BtnSkillsOpt = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
+export const SmallBtn = styled.button``;

@@ -22,7 +22,7 @@ export default function Background() {
             init={particlesInit}
             loaded={particlesLoaded}
             style={{
-                height: "30%",
+                zIndex: -1,
             }}
             options={{
                 interactivity: {

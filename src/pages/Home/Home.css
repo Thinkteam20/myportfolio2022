@@ -5,7 +5,7 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Urbanist', sans-serif;
 */
 
-#hero{
+.hero{
     position:relative;
     height: auto;
     /* background-position: 100%; */
