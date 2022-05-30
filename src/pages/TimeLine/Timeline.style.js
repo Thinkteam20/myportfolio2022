@@ -33,6 +33,7 @@ export const Heading = styled.h1`
 export const TimeBox = styled.div`
     margin: auto;
     padding-left: 40px;
+    padding-right: 40px;
     padding-top: 20px;
     width: 70%;
     height: 80%;
