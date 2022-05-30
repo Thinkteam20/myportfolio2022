@@ -84,7 +84,7 @@ export const SkillImg = styled.img`
 `;
 
 export const SkillRight = styled.div`
-    width: 590px;
+    width: 100%;
     margin-top: 60px;
     margin-left: 40px;
     @media (max-width: 768px) {
