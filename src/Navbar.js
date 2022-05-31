@@ -16,10 +16,11 @@ import {
 
 const Navbar = () => {
     const [navItems, setNavItems] = useState([
-        { id: "h", value: "home", letter: " < home /> " },
-        { id: "s", value: "skills", letter: " < skills /> " },
-        { id: "t", value: "timeline", letter: " < timeline /> " },
-        { id: "p", value: "projects", letter: " < projects /> " },
+        { id: "h", value: "home", letter: " < Home /> " },
+        { id: "b", value: "about", letter: " < About /> " },
+        { id: "s", value: "skills", letter: " < Skills /> " },
+        { id: "t", value: "timeline", letter: " < Timeline /> " },
+        { id: "p", value: "projects", letter: " < Projects /> " },
         { id: "f", value: "footer", letter: " < footer /> " },
     ]);
     const [extendNavbar, setExtendNavbar] = useState(false);

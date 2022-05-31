@@ -44,5 +44,39 @@ font-family: 'Urbanist', sans-serif;
 .arrow{
     position: absolute;
     bottom: 50px;
-    
 }
+.button-box{
+    position: relative;
+    top: 100px;
+}
+
+.button-box > .button1 {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size:14px;
+    background-color: #d35400;
+    color: white;
+    border-radius: 4px;
+    background-color:#d35400;
+    border: none;
+}
+.button-box > .button2 {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #21abcd;
+    color: white;
+    border-radius: 4px;
+    background-color:#21abcd;
+    border: none;
+}
+.button-box span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }

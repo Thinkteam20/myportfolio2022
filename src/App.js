@@ -1,13 +1,21 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./Navbar.js";
-import { Home, Skill, Timeline, Footer, Projects } from "./pages/index.js";
+import {
+    Home,
+    About,
+    Skill,
+    Timeline,
+    Footer,
+    Projects,
+} from "./pages/index.js";
 
 const App = () => {
     return (
         <div>
             <Navbar />
             <Home />
+            <About />
             <Skill />
             <Timeline />
             <Projects />

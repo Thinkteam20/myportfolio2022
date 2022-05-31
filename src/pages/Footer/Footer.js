@@ -10,6 +10,7 @@ import {
     Copywrite,
 } from "./Footer.style";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { SiNotion } from "react-icons/si";
 
 const Footer = () => {
     const [text1, setText1] = useState("< Footer / >");
@@ -31,6 +32,9 @@ const Footer = () => {
                             </SocialsA>
                             <SocialsA href=''>
                                 <FaInstagram />
+                            </SocialsA>
+                            <SocialsA href=''>
+                                <SiNotion />
                             </SocialsA>
                         </FooterContextSocials>
                         <Copywrite>

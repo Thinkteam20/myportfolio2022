@@ -31,6 +31,14 @@ function Home() {
                         />
                     </h2>
                 </div>
+                <div className='button-box'>
+                    <button className='button1'>
+                        <span>Download Resume</span>
+                    </button>
+                    <button className='button2'>
+                        <span>Go to LinkedIn!</span>
+                    </button>
+                </div>
                 <div className='arrow'>
                     <IoMdArrowRoundDown size={30} />
                 </div>
