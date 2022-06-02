@@ -16,6 +16,7 @@ export const Container = styled.section`
     position: relative;
     z-index: 1;
     display: flex;
+    overflow: hidden;
     background-color: #fff;
     @media (max-width: 768px) {
         height: 100vh;
@@ -58,18 +59,20 @@ export const Arrow = styled.div`
 
 export const Wrapper = styled.div`
     margin: 50px 0px;
-    height: 100%;
+    display: flex;
+    /* transform: translateX(); */
 `;
 export const Slider = styled.div`
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
+    background-color: #${(props) => props.bg};
 `;
 
 export const CardContainer = styled.div`
     flex: 1;
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
 `;
@@ -77,17 +80,16 @@ export const CardContainer = styled.div`
 export const Pcard = styled.div`
     height: 500px;
     width: 300px;
-
     border-radius: 10px;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 `;
 export const CardImg = styled.img`
     width: 100%;
-    max-height: 30%;
+    max-height: 40%;
 `;
 export const Caption = styled.div`
     position: relative;
-    height: 70%;
+    height: 60%;
     padding: 10px;
     text-align: center;
 `;
@@ -108,8 +110,8 @@ export const CaptionChecklists = styled.div`
     align-items: center;
     padding: 10px 5px 0px 0px;
 `;
+
 export const Picons = styled.div`
-    width: 100%;
     margin: 20px 5px;
     display: flex;
 `;
@@ -118,21 +120,23 @@ export const Picon = styled.div`
     height: 50px;
     margin: 0px 5px;
 `;
+
 export const InfoContainer = styled.div`
     flex: 1;
-    height: 100%;
-    width: 100%;
-    padding: 50px;
+    padding: 20px;
 `;
-
+export const InfoDiv = styled.div`
+    flex-direction: start;
+    width: 35%;
+`;
 export const InfoTitle = styled.h1`
+    width: 100%;
     font-size: 30px;
     font-family: "Poppins", sans-serif;
 `;
 export const Desc = styled.p`
-    margin: 50px 0px;
     font-size: 20px;
     font-weight: 500px;
     letter-spacing: 3px;
+    width: 100%;
 `;
-export const InfoButton = styled.button``;
