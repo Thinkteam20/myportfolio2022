@@ -17,7 +17,7 @@ export const Container = styled.section`
     z-index: 1;
     display: flex;
     background: #fff;
-    @media (max-width: 768px) {
+    @media (max-width: 480px) {
         height: 100vh;
         flex-direction: column;
         padding-bottom: 20px;
@@ -25,6 +25,9 @@ export const Container = styled.section`
 `;
 export const HeadingBox = styled.div`
     margin-right: 20px;
+    @media (max-width: 480px) {
+        margin-right: 0px;
+    }
 `;
 
 export const Heading = styled.h1`
@@ -36,6 +39,11 @@ export const Heading = styled.h1`
         font-family: "Raleway", sans-serif;
         margin-bottom: 10px;
     }
+    @media (max-width: 480px) {
+        margin: auto;
+        text-align: center;
+        width: 30%;
+    }
 `;
 
 export const AboutSet = styled.div`
@@ -43,16 +51,27 @@ export const AboutSet = styled.div`
     display: flex;
     width: 100%;
     height: 600px;
+    @media only screen and (max-width: 480px) {
+        flex-direction: column;
+    }
 `;
 export const AboutSetLeft = styled.div`
     flex-basis: 35%;
     background: url(../../images/about-image.jpeg) no-repeat center center fixed;
+    @media only screen and (max-width: 480px) {
+        height: 200px;
+    }
 `;
 export const AboutSetRight = styled.div`
     flex-basis: 65%;
     text-align: left;
     padding: 20px;
     margin-left: 20px;
+    @media only screen and (max-width: 480px) {
+        padding: 0;
+        margin-top: 20px;
+        margin-left: 0;
+    }
 `;
 export const AboutSetRightHeading = styled.h3`
     border: 2px solid #0288d1;
@@ -81,10 +100,16 @@ export const AboutImage = styled.img`
 `;
 
 export const TitlesBox = styled.div`
-    width: 70%;
-    margin: 20px;
     display: flex;
-    justify-content: space-between;
+`;
+
+export const BoxLeft = styled.div`
+    width: 100%;
+    flex-basis: 50%;
+`;
+export const BoxRight = styled.div`
+    width: 100%;
+    flex-basis: 50%;
 `;
 
 export const AboutSetRightTitle = styled.h2`
@@ -92,10 +117,10 @@ export const AboutSetRightTitle = styled.h2`
     font-weight: 900;
     font-size: 20px;
     font-size: 17px;
-`;
-export const AboutSetRightTitle2 = styled.h2`
-    font-family: "Open Sans", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    font-size: 17px;
+    margin: 30px 0;
+    @media only screen and (max-width: 480px) {
+        margin: 10px 0;
+        font-weight: 900;
+        font-size: 10px;
+    }
 `;

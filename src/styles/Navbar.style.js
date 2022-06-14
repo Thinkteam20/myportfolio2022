@@ -12,10 +12,9 @@ export const NavbarContainer = styled.div`
     flex-direction: column;
     display: flex;
     align-items: center;
-    justfy-contents: center;
+
     align-content: space-between;
     @media (min-width: 700px) {
-        height: 48px;
     }
 `;
 
@@ -23,7 +22,7 @@ export const Nav = styled.nav`
     display: flex;
     width: 100%;
     height: 48px;
-    justify-contents: center;
+    justify-content: center;
     @media (max-width: 700px) {
         display: none;
     }
@@ -33,6 +32,9 @@ export const Boxs = styled.div`
     text-align: center;
     line-height: 48px;
     border-bottom: solid 0.1em #21abcd;
+    @media (max-width: 700px) {
+        border-bottom: solid 0em #fff;
+    }
 `;
 
 export const Li = styled.li`
@@ -56,8 +58,10 @@ export const NavbarExtendedContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    background-color: #fff;
+    width: 100%;
     @media (min-width: 700px) {
+        background-color: #fff;
     }
 `;
 export const OpenLinksButton = styled.button`
@@ -86,4 +90,6 @@ export const NavbarLinkExtended = styled(Link)`
     text-decoration: none;
     font-size: 14pt;
     border-bottom: 2px solid black;
+    @media (min-width: 700px) {
+    }
 `;

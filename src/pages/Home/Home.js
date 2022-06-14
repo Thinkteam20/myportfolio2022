@@ -3,6 +3,8 @@ import Typewriter from "typewriter-effect";
 import Background from "../../components/Background.js";
 import "./Home.css";
 import { IoMdArrowRoundDown } from "react-icons/io";
+import ResumeFile from "../../resume/resume.pdf";
+import { Link } from "react-scroll";
 
 function Home() {
     return (
@@ -32,15 +34,28 @@ function Home() {
                     </h2>
                 </div>
                 <div className='button-box'>
-                    <button className='button1'>
-                        <span>Download Resume</span>
+                    <button className='button1' onClick={ResumeFile}>
+                        <a
+                            href={ResumeFile}
+                            download='resume'
+                            style={{ color: "white" }}
+                        >
+                            <span>Download Resume</span>
+                        </a>
                     </button>
                     <button className='button2'>
-                        <span>Go to LinkedIn!</span>
+                        <a
+                            href='https://www.linkedin.com/in/philip-jung-b546181a3'
+                            style={{ color: "white" }}
+                        >
+                            <span>Go to LinkedIn!</span>
+                        </a>
                     </button>
                 </div>
                 <div className='arrow'>
-                    <IoMdArrowRoundDown size={30} />
+                    <Link to={"about"} smooth={true} duration={1000}>
+                        <IoMdArrowRoundDown size={30} />
+                    </Link>
                 </div>
             </div>
             <Background />

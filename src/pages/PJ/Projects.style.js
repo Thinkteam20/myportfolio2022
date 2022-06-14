@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { mobile } from "../../responsive.js";
 /* 
 font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
@@ -18,15 +19,21 @@ export const Container = styled.section`
     display: flex;
     overflow: hidden;
     background-color: #fff;
-    @media (max-width: 768px) {
-        height: 100vh;
+    @media only screen and (max-width: 480px) {
+        height: 100%;
         flex-direction: column;
         padding-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        overflow: auto;
     }
 `;
 
 export const HeadingBox = styled.div`
     margin-right: 20px;
+    @media (max-width: 480px) {
+        margin-right: 0px;
+    }
 `;
 
 export const Heading = styled.h1`
@@ -37,6 +44,11 @@ export const Heading = styled.h1`
         display: block;
         font-family: "Raleway", sans-serif;
         margin-bottom: 10px;
+    }
+    @media (max-width: 480px) {
+        margin: auto;
+        text-align: center;
+        width: 35%;
     }
 `;
 export const Arrow = styled.div`
@@ -55,18 +67,31 @@ export const Arrow = styled.div`
     left: ${(props) => props.direction === "left" && "40px"};
     right: ${(props) => props.direction === "right" && "40px"};
     cursor: pointer;
+    @media (max-width: 480px) {
+        display: none;
+    }
 `;
 
 export const Wrapper = styled.div`
     margin: 50px 0px;
     display: flex;
-    /* transform: translateX(); */
+    transition: all 1.5s ease;
+    transform: translateX(${(props) => props.slideIndex * -100}vw);
+    @media (max-width: 480px) {
+        height: 100vh;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
 `;
 export const Slider = styled.div`
     width: 100vw;
     display: flex;
     align-items: center;
-    background-color: #${(props) => props.bg};
+    background-color: ${(props) => props.bg};
+    @media (max-width: 480px) {
+        flex-direction: column;
+        width: 100%;
+    }
 `;
 
 export const CardContainer = styled.div`
@@ -75,13 +100,20 @@ export const CardContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    @media (max-width: 480px) {
+        width: 100vw;
+    }
 `;
 
 export const Pcard = styled.div`
     height: 500px;
-    width: 300px;
+    width: 400px;
     border-radius: 10px;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    @media (max-width: 480px) {
+        height: 100%;
+        width: 100%;
+    }
 `;
 export const CardImg = styled.img`
     width: 100%;
@@ -89,19 +121,53 @@ export const CardImg = styled.img`
 `;
 export const Caption = styled.div`
     position: relative;
-    height: 60%;
-    padding: 10px;
+    max-height: 60%;
+    padding: 40px;
     text-align: center;
 `;
+export const CardBody = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+`;
 export const CaptionHeading = styled.h3`
-    margin: 5px;
+    margin: 10px 0px;
     font-weight: 800px;
+    font-size: 24px;
     font-family: "Poppins", sans-serif;
 `;
 export const CaptionDesc = styled.p`
     font-size: 12px;
     font-weight: 400px;
     font-family: "Open Sans", sans-serif;
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    padding: 2px 10px;
+
+    text-transform: uppercase;
+    cursor: pointer;
+`;
+
+export const StackIconBox = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    margin: 30px 0;
+`;
+
+export const StackIcon = styled.img`
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    @media (max-width: 480px) {
+        width: 30px;
+        height: 30px;
+    }
 `;
 
 export const CaptionChecklists = styled.div`
@@ -127,7 +193,12 @@ export const InfoContainer = styled.div`
 `;
 export const InfoDiv = styled.div`
     flex-direction: start;
-    width: 35%;
+    width: 50%;
+    @media (max-width: 480px) {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
 `;
 export const InfoTitle = styled.h1`
     width: 100%;
@@ -139,4 +210,5 @@ export const Desc = styled.p`
     font-weight: 500px;
     letter-spacing: 3px;
     width: 100%;
+    margin-top: 20px;
 `;

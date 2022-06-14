@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useLayoutEffect } from "react";
+
 import {
     Container,
     HeadingBox,
@@ -9,6 +10,8 @@ import {
     AboutSetRightHeading,
     AboutSetRightDescription,
     AboutImage,
+    BoxRight,
+    BoxLeft,
     TitlesBox,
     AboutSetRightTitle,
     AboutSetRightTitle2,
@@ -19,6 +22,7 @@ const About = () => {
     const [jobTitle, setJobTitle] = useState(
         "< Software Engineer and Freelancer/ >"
     );
+
     return (
         <div id='about'>
             <Container>
@@ -41,34 +45,26 @@ const About = () => {
                         </AboutSetRightDescription>
                         <hr />
                         <TitlesBox>
-                            <AboutSetRightTitle>Name</AboutSetRightTitle>
-                            <AboutSetRightTitle2>
-                                Sangpil Jung
-                            </AboutSetRightTitle2>
-                        </TitlesBox>
-                        <TitlesBox>
-                            <AboutSetRightTitle>Experience</AboutSetRightTitle>
-                            <AboutSetRightTitle2>2 years</AboutSetRightTitle2>
-                        </TitlesBox>
-                        <TitlesBox>
-                            <AboutSetRightTitle>Email</AboutSetRightTitle>
-                            <AboutSetRightTitle2>
-                                Teamgrey10@likelion.org
-                            </AboutSetRightTitle2>
-                        </TitlesBox>
-                        <TitlesBox>
-                            <AboutSetRightTitle>Mobile</AboutSetRightTitle>
-                            <AboutSetRightTitle2>
-                                0455672643
-                            </AboutSetRightTitle2>
-                        </TitlesBox>
-                        <TitlesBox>
-                            <AboutSetRightTitle>Location</AboutSetRightTitle>
-                            <AboutSetRightTitle2>Sydney</AboutSetRightTitle2>
-                        </TitlesBox>
-                        <TitlesBox>
-                            <AboutSetRightTitle>Instagram</AboutSetRightTitle>
-                            <AboutSetRightTitle2>Link</AboutSetRightTitle2>
+                            <BoxLeft>
+                                <AboutSetRightTitle>Name</AboutSetRightTitle>
+                                <AboutSetRightTitle>
+                                    Experience
+                                </AboutSetRightTitle>
+                                <AboutSetRightTitle>Email</AboutSetRightTitle>
+                                <AboutSetRightTitle>Mobile</AboutSetRightTitle>
+                            </BoxLeft>
+                            <BoxRight>
+                                <AboutSetRightTitle>
+                                    Sangpil Jung
+                                </AboutSetRightTitle>
+                                <AboutSetRightTitle>2 years</AboutSetRightTitle>
+                                <AboutSetRightTitle>
+                                    teamgrey10@likelion.org
+                                </AboutSetRightTitle>
+                                <AboutSetRightTitle>
+                                    0455672643
+                                </AboutSetRightTitle>
+                            </BoxRight>
                         </TitlesBox>
                     </AboutSetRight>
                 </AboutSet>

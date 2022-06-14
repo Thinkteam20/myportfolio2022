@@ -58,7 +58,7 @@ const Skill = () => {
                             <Skills>
                                 <Details>
                                     <span>Javascript</span>
-                                    <span>72%</span>
+                                    <span>90%</span>
                                 </Details>
                                 <Bar>
                                     <BarDiv name='js'></BarDiv>
@@ -67,28 +67,28 @@ const Skill = () => {
                             <Skills>
                                 <Details>
                                     <span>React</span>
-                                    <span>90%</span>
+                                    <span>85%</span>
                                 </Details>
                                 <Bar>
-                                    <BarDiv name='html'></BarDiv>
+                                    <BarDiv name='react'></BarDiv>
                                 </Bar>
                             </Skills>
                             <Skills>
                                 <Details>
                                     <span>Java</span>
-                                    <span>90%</span>
+                                    <span>70%</span>
                                 </Details>
                                 <Bar>
-                                    <BarDiv name='html'></BarDiv>
+                                    <BarDiv name='java'></BarDiv>
                                 </Bar>
                             </Skills>
                             <Skills>
                                 <Details>
                                     <span>Node.js</span>
-                                    <span>90%</span>
+                                    <span>85%</span>
                                 </Details>
                                 <Bar>
-                                    <BarDiv name='html'></BarDiv>
+                                    <BarDiv name='react'></BarDiv>
                                 </Bar>
                             </Skills>
                         </SkillWarpper>

@@ -5,14 +5,21 @@ const HtmlKeyframs = keyframes`
     100%{
         width: 90%;
     }
-}
+
 `;
 
 const JsKeyframs = keyframes`
     100%{
+        width: 90%;
+    }`;
+const Java = keyframes`
+    100%{
         width: 70%;
+    }`;
+const React = keyframes`
+    100%{
+        width: 80%;
     }
-}
 `;
 
 export const Container = styled.section`
@@ -47,6 +54,9 @@ export const SkillSet = styled.div`
 `;
 export const HeadingBox = styled.div`
     margin-right: 20px;
+    @media (max-width: 480px) {
+        margin-right: 0px;
+    }
 `;
 
 export const Heading = styled.h1`
@@ -57,6 +67,11 @@ export const Heading = styled.h1`
         display: block;
         font-family: "Raleway", sans-serif;
         margin-bottom: 10px;
+    }
+    @media (max-width: 480px) {
+        margin: auto;
+        text-align: center;
+        width: 30%;
     }
 `;
 
@@ -147,9 +162,13 @@ export const BarDiv = styled.div`
     animation: ${(props) =>
             props.name === "html"
                 ? HtmlKeyframs
+                : props.name === "java"
+                ? Java
+                : props.name === "react"
+                ? React
                 : props.name === "js"
                 ? JsKeyframs
-                : JsKeyframs}
+                : null}
         2s forwards;
 `;
 

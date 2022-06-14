@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { mobile } from "../../responsive";
 
 export const Container = styled.section`
     padding-top: 20px;
@@ -10,8 +11,11 @@ export const Container = styled.section`
     text-align: center;
     z-index: 1;
     background: #f7f8f9;
-    @media (max-width: 768px) {
-        height: 100vh;
+    /* ${mobile({
+        height: "100%",
+    })} */
+    @media (max-width: 380px) {
+        height: 100%;
         flex-direction: column;
         padding-bottom: 20px;
     }

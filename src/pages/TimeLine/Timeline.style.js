@@ -20,14 +20,25 @@ export const Container = styled.section`
 
 export const HeadingBox = styled.div`
     margin-right: 20px;
+    @media (max-width: 480px) {
+        margin-right: 0px;
+    }
 `;
+
 export const Heading = styled.h1`
-    font-size: 25px;
-    border-bottom: 2px solid #27ae60;
-    width: 100%;
-    display: block;
-    font-family: "Raleway", sans-serif;
-    margin-bottom: 10px;
+    & {
+        font-size: 25px;
+        border-bottom: 2px solid #27ae60;
+        width: 100%;
+        display: block;
+        font-family: "Raleway", sans-serif;
+        margin-bottom: 10px;
+    }
+    @media (max-width: 480px) {
+        margin: auto;
+        text-align: center;
+        width: 40%;
+    }
 `;
 
 export const TimeBox = styled.div`
@@ -41,6 +52,13 @@ export const TimeBox = styled.div`
     box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
         rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
     border-radius: 10px;
+    @media (max-width: 480px) {
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 `;
 
 export const ExpHeading = styled.h2`
