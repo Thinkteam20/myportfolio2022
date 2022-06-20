@@ -40,8 +40,8 @@ const About = () => {
                             wants to make new changes through coding.
                         </AboutSetRightDescription>
                         <AboutSetRightDescription>
-                            I develop Web and Mobile apps for individuals and
-                            businesses in various fields.
+                            I develop Web apps for individuals and businesses in
+                            various fields.
                         </AboutSetRightDescription>
                         <hr />
                         <TitlesBox>

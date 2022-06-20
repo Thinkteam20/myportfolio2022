@@ -73,7 +73,7 @@ function Timeline() {
                                     2021 July - Now
                                 </TimelineBoxsDuration>
                                 <TimelineBoxsJobTitle>
-                                    software engineer
+                                    Software engineer
                                 </TimelineBoxsJobTitle>
                                 <TimelineContentsDescription></TimelineContentsDescription>
                             </TimelineBoxsUl>
